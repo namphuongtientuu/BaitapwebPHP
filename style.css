@@ -1,0 +1,281 @@
+/* Reset Css */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* HEADER */
+
+#header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 48px;
+    padding: 0 32px;
+    background-color: #000;
+}
+
+#nav {
+    list-style-type: none;
+    display: flex;
+    justify-content: end;
+}
+
+#nav li {
+    position: relative;
+}
+
+#nav > li > a {
+    color: #fff;
+    padding: 0 1rem;
+    line-height: 3rem;
+    text-transform: uppercase;
+}
+
+#nav li a {
+    font-size: 14px;
+    text-decoration: none;
+    display: block;
+}
+
+#nav > li:hover > a {
+    background-color: #d6ac03;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#nav .face-subnav-heading,
+#nav .youtube-subnav-heading,
+#nav .google-subnav-heading,
+#nav .map-subnav-heading {
+    display: none;
+    position: absolute;
+    list-style-type: none;
+    top: 100%;
+    left: 0;
+    width: 190px;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+#nav .face-subnav-heading a,
+#nav .youtube-subnav-heading a,
+#nav .google-subnav-heading a,
+#nav .map-subnav-heading a {
+    color: #685402;
+    line-height: 2rem;
+    padding: 0 5px;
+}
+
+#nav .face-subnav-heading li:hover a,
+#nav .youtube-subnav-heading li:hover a,
+#nav .google-subnav-heading li:hover a,
+#nav .map-subnav-heading li:hover a {
+    background-color: rgb(110, 226, 255);
+    font-weight: 700;
+}
+
+#nav li:hover .face-subnav-heading,
+#nav li:hover .youtube-subnav-heading,
+#nav li:hover .google-subnav-heading,
+#nav li:hover .map-subnav-heading {
+    display: block;
+}
+
+.fa-facebook {
+    color: rgb(43, 43, 224);
+    margin-right: 2px;
+}
+
+.fa-youtube {
+    margin-right: 2px;
+    color: rgb(224, 43, 43);
+}
+
+.fa-google {
+    margin-right: 2px;
+    color: rgb(207, 126, 21);
+}
+
+.fa-map-location-dot {
+    margin-right: 2px;
+    color: rgb(58, 224, 43);
+}
+
+/* CONTENT */
+#content {
+    /* margin-top: 48px; */
+    padding-top: 48px;
+}
+
+#content .article-section {
+    width: 90%;
+    margin: auto;
+    margin-top: 3rem;
+    padding: 1rem;
+    color: rgb(88, 87, 87);
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+}
+
+#content .content-heading {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+#content .article-text {
+    margin: 1.5rem 0;
+    width: 60%;
+    font-family: cursive;
+}
+
+/* Article Body */
+.article-body {
+    display: flex;
+}
+
+.article-body-left {
+    display: block;
+    padding: 8px;
+    width: 40%;
+    text-align: justify;
+}
+
+.article-img {
+    width: 100%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.abl-heading {
+    margin-top: 16px;
+}
+
+.abl-content {
+    margin-top: 16px;
+    color: rgb(156, 156, 156);
+}
+
+.article-body-right {
+    display: block;
+    width: 60%;
+    padding-left: 2.5rem;
+    padding-top: 1rem;
+}
+
+.content-right-item {
+    display: flex;
+    padding-bottom: 1rem;
+    margin: 1rem 0;
+}
+
+.border-dashed {
+    border-bottom: 2px dashed rgb(133, 2, 122);
+}
+
+.item-avatar {
+    font-size: 60px;
+    height: 8rem;
+    width: 8rem;
+    line-height: 8rem;
+    color: #fff;
+    text-align: center;
+}
+
+.fist-bg {
+    background-color: rgb(16, 248, 16);
+}
+
+.second-bg {
+    background-color: rgb(245, 176, 49);
+}
+
+.third-bg {
+    background-color: rgb(255, 87, 227);
+}
+
+.item-content {
+    font-family: cursive;
+    padding-left: 2rem;
+}
+
+.item-content h1 {
+    padding-bottom: 8px;
+    border: none;
+}
+
+.article-video {
+    width: 100%;
+}
+
+.article-body-right .border-dashed {
+    border-bottom: none;
+}
+
+.line{
+    background: rgb(231,6,219);
+    background: linear-gradient(332deg, rgba(231,6,219,1) 0%, rgba(212,202,51,1) 29%, rgba(223,255,151,1) 57%, rgba(118,200,255,1) 100%);
+    width: 100%;
+    height: 3px;
+}
+
+/* Contact */
+
+#contact {
+    width: 90%;
+    margin: auto;
+    padding: 1rem;
+    margin-top: 3rem;
+    text-align: center;
+    background-color: rgb(100 180 159);
+}
+
+.contact-line {
+    list-style-type: none;
+    display: flex;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+#contact .contact-line .block-input {
+    width: 50%;
+    padding: 0 0.5rem;
+}
+
+.block-input input {
+    padding: 0.8rem 0.5rem;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+}
+
+.contact-item {
+    padding: 0.4rem;
+}
+
+#contact textarea {
+    width: 100%;
+    resize: none;
+    margin-top: 32px;
+    padding: 12.8px 8px;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    min-height: 10rem;
+}
+
+.Send-btn {
+    width: 100%;
+    font-size: 18px;
+    border: none;
+    padding: 0.8rem;
+    border-radius: 3px;
+    margin-top: 16px;
+    background-color: #353535;
+    text-decoration: none;
+    color: #fff;
+}
